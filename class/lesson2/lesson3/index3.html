@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 3  Основи стилизації</title>
+    <!-- <link rel="stylesheet" href="./styles/style.css"> -->
+
+    <style>
+      li::marker{
+        color:brown
+      }
+      p::before{
+        content: "EE";
+      }
+      p::after{
+        content: "TT";
+      }
+      ul{
+        /* list-style-type: disc;
+        list-style-type: square; */
+        list-style-type: circle;
+        /* list-style-image: ; */
+        list-style-position: inside;
+        text-align: center;
+      }
+      ol{
+        list-style: upper-latin;
+      }
+      div{
+         background-color: brown; 
+        /*padding-left: 10px;
+        padding-bottom: 25px;
+        padding-right: 40px;
+        padding-top: 8; */
+        /* padding: 10px 25px 50px 10px ; */
+        /* padding:10px 30px 5px; */
+        /* padding:20px 35px ; */
+        margin: 30px 10px 45px ;
+        padding:40px ;
+      }
+      .nested-list{
+        list-style-type: square;
+      }
+      .nested-list ul{
+        list-style-type: square;
+        color: rgb(10,100 ,10 )
+      }
+    </style>
+</head>
+<body>
+
+  <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem suscipit dolorem iste necessitatibus obcaecati officia voluptas magni voluptate qui facilis ad quam repudiandae eos ullam totam natus, beatae laboriosam facere recusandae aspernatur, cum culpa ea! Unde, nulla! Nulla, repellendus nam ad unde quam doloribus eaque voluptas. Quam atque dolores architecto!</div>
+  <ul class="nested-list">
+    li>ul>li{Fronted}
+
+
+  </ul>
+  <ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+  </ul>
+  <ol>
+    <li>Відкритий редактор</li>
+    <li>Написати код</li>
+    <li>Закрити редактор</li>
+  </ol>
+
+  <dl>HTML</dl>
+  <dd>Мова опису структури веб-сторінки</dd>
+  <dl>IDE</dl>
+  <dd>Інтегрований</dd>
+  <div>
+   &lt;div&gt;
+   &amp;
+   &quot;
+   &nbsp;
+   &copy;&reg;&euro;&mdash;&times;
+   
+  </div>
+    <p class = "front-style">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex tempore est 
+      aliquam omnis facilis ab.</p>
+      <h1>Заголовок 1</h1>
+
+      <h2>Заголовок 2</h2>
+      <h3  class= "bg-green color-blue">Заголовок 3</h3>
+      <h4  class = "bg-green color-blue">Заголовок 4</h4>
+
+      <h6 id="header-styled">Заголовок 6</h6>
+
+      <p style = "background-color: coral;
+      font-family: 'Courier New', Courier, monospace;"> 
+      <p  >
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, architecto veniam. Ipsam eos natus asperiores?
+        </p>
+       </p>
+       <p class= "bg-green color-blue">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor fuga iusto veritatis quibusdam tenetur. Beatae!</p>
+</body>
+</html>
