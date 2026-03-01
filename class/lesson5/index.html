@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../shade_resurses/logo.svg">
+    <title>Lesson5|Animation</title>
+    <style>
+        *{
+            margin: 0;
+            background-color: blanchedalmond;
+        }
+        .img-con{
+            border: 3px cadetblue solid;
+            text-align: center;
+            padding: 10px;
+        }
+        img{
+            width: 40%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 2px 2px 10px black;
+            transition: all 0.9 ease 0s;
+        }
+        /* img:hover{
+            width: 60%;
+            box-shadow: 5px 5px 10px black;
+        } */
+        a:link{
+            color: chocolate;
+        }
+        a:visited{
+            color: rgb(4, 135, 135);
+            /* text-decoration: dotted line-through black 10px; */
+        }
+        a:focus{
+            color: crimson;
+        }
+        a:active{
+            color:thistle;
+        }
+         .button:hover{
+            background-color: rgb(67, 42, 165);
+            color: rgb(67 , 42 ,16);
+        }
+        
+        .button{
+            width: 30%;
+            padding: 10px 0;
+            margin: auto;
+            text-align: center;
+            border:  solid red 1px;
+            background-color: red;
+            border-radius: 10px;
+            /* transition: all 0.8s cubic-bezier(0.25,0.46,0.45,0.94) 0s; */
+            transition-property: all;
+            transition-duration: 0,8s;
+            transition-timing-function: cubic-bezier(0.25,0.46,0.45,0.94);
+            transition-delay: 0s;
+        }
+
+        .button a{
+            background-color: transparent;
+            color: black;
+        }
+        .transform-example{
+            margin: 10px;
+            padding: 10px;
+            height: auto;
+            border: solid cadetblue 5px;
+        }
+
+        .square {
+            width: 50px;
+            height: 50px;
+            margin: 15px auto;
+            background-color: black;
+            transition: all 0.8 ease 0s;
+        }
+
+        .tramslate-example:hover{
+            transform: translate(25px,35px);
+        }
+
+        .scale-example:hover{
+            transform: scale(2,0.5);
+        }
+        .rotate2d:hover{
+            transform: rotate(120deg);
+        }
+        .rotate3dx:hover{
+            transform: rotateX(60deg);
+        }
+        /* img:hover{
+            transform: rotateX(180deg);
+            transform: rotateY(120deg);
+            transform: rotateZ(120deg);
+        } */
+         .rotate3dx:hover{
+            transform: rotateX(120deg);
+         }
+         .rotate3dy:hover{
+            transform: rotateY(120deg);
+         }
+         .rotate3dz:hover{
+            transform: rotateZ(120deg);
+         }
+        .skew:hover{
+            transform: skew(25deg,35deg);
+        }
+        .rotate2d{
+            transform-origin: 100% 100%;
+        }
+      .animation{
+        width: 80%;
+        height: 500px;
+        text-align: center;
+        box-sizing: border-box;
+        margin: 5px;
+        border: cadetblue solid 5px;
+        padding:0 ;
+      }
+      .circle{
+        height: 50px;
+        width: 50px;
+        background-color: darkcyan;
+        border-radius: 50%;
+        margin: 10px;
+        animation: circle-anim;
+        animation-duration: 3s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        /* animation-direction: alternate; */
+        /* animation-fill-mode: forwards; */
+      }
+
+      @keyframes circle-anim{
+        0%{ 
+            transform: translate(0,0);
+            background-color: cadetblue;
+        }
+        25%{
+            transform: translate(400px,0);
+            background-color: chocolate;
+        }
+        50%{
+            transform: translate(400px,400px);
+            background-color: turquoise;
+        }
+        75%{
+            transform: translate(0,400px);
+            background-color: crimson;
+        }
+        100%{
+            transform: translate(0,0);
+            background-color: darkolivegreen;
+        }
+    }
+    </style>
+</head>
+
+<body>
+
+
+    <h1>Animation</h1>
+    <div class="button">
+        <a href="#">Натисни на мене</a>
+    </div>
+    
+    <div class="animation">
+        <div class="circle"></div>
+    </div>
+
+    <div class="transform-example">
+        <div class="translate-example square"></div>
+        <div class="scale-example square"></div>
+        <div class="rotate2d square"></div>
+        <div class="rotate3dx square"></div>
+        <div class="rotate3dY square"></div>
+        <div class="rotate3dZ square"></div>
+        <div class="skew square"></div>
+    </div>
+
+    <p>
+        <a href="https://uk.wikipedia.org/wiki/%D0%93%D1%96%D0%BF%D0%B5%D1%80%D0%BF%D0%BE%D1%81%D0%B8%D0%BB%D0%B0%D0%BD%D0%BD%D1%8F#:~:text=%D0%93%D1%96%D0%BF%D0%B5%D1%80%D0%BF%D0%BE%D1%81%D0%B8%D0%BB%D0%B0%CC%81%D0%BD%D0%BD%D1%8F%2C%20%D0%B0%D0%B1%D0%BE%20%D0%BF%D1%80%D0%BE%D1%81%D1%82%D0%BE%20%D0%BF%D0%BE%D1%81%D0%B8%D0%BB%D0%B0%CC%81%D0%BD%D0%BD%D1%8F%2C%20%D1%96%D0%BD%D0%BE%D0%B4%D1%96,%D1%81%D1%82%D0%BE%D1%80%D1%96%D0%BD%D0%BA%D0%B8%2C%20%D0%BD%D0%B0%20%D1%8F%D0%BA%D1%96%D0%B9%20%D0%B2%D1%96%D0%BD%20%D0%BF%D0%B5%D1%80%D0%B5%D0%B1%D1%83%D0%B2%D0%B0%D1%94.">Giper</a> - this text cooд
+        <a href="../lesson4/index.html">Посилання на іншу сторінку</a>
+        <a href="#img-id">Посилання на елемент</a>
+        <a href="https://www.russianfood.com/recipes/bytype/?fid=671">Посилання</a>
+    </p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum sit similique, delectus rerum excepturi deleniti fugit odit corporis nostrum veniam omnis aliquid eaque vero temporibus esse minus. Quo, optio. Fugiat, nulla cum? Nam laborum temporibus aut. Tenetur quidem explicabo repudiandae cupiditate? Aperiam ut impedit, autem quod atque animi eveniet nihil consequatur iusto laudantium sunt quia, minus neque recusandae veritatis. Beatae ut ipsum ducimus quam? Aliquid non fugiat reiciendis beatae hic neque, animi fuga cumque quae modi ad blanditiis saepe explicabo eum dolorem distinctio! Dolorem ipsum modi iusto minus perferendis, dignissimos incidunt quas aut quia obcaecati quaerat eum, unde ducimus itaque! Optio quidem sunt, ad fuga magnam voluptas consequuntur explicabo! Pariatur quia hic aliquid numquam ullam magnam adipisci, culpa sequi quibusdam obcaecati nemo distinctio id eos neque asperiores sed quidem ratione minus sapiente assumenda, unde accusamus eius. Exercitationem, nesciunt repellat. Minus incidunt tempora totam, animi quisquam beatae consequatur vero, blanditiis magnam maiores ad accusantium rem aperiam repellendus commodi officia, quae iusto doloribus. Deserunt repellat voluptatibus non, laborum, quam dolor commodi debitis sunt quo alias eaque distinctio itaque vitae, accusantium laboriosam corporis quos provident vero ullam adipisci rem in laudantium! Itaque quo iste, odio totam aut necessitatibus placeat ipsam nemo cupiditate repellat optio? Odio quam obcaecati aperiam eligendi, hic in, voluptate numquam, culpa animi nisi quia quae officiis provident porro eveniet nostrum ratione rerum? Unde animi, doloribus praesentium quae error, vitae molestiae quibusdam ea, velit veniam nostrum ullam sapiente vel pariatur molestias eos iusto dolore. Consectetur nihil quasi sapiente illo porro, sint optio nesciunt ea culpa repudiandae ipsa provident? Earum, officia repellat nobis voluptatem vel nihil doloribus ducimus dolor modi natus minima obcaecati officiis tenetur. Perspiciatis commodi mollitia ullam similique dicta eligendi, architecto quibusdam natus reprehenderit error ducimus nostrum odit quae totam temporibus atque, voluptas animi repellendus. Reprehenderit et repellendus dolore cumque vel! Facere porro tempore dignissimos dolor beatae, molestias reiciendis, itaque repudiandae earum cum aperiam consequatur esse suscipit, obcaecati iusto sequi magni debitis quod officia! Obcaecati vero ea animi, deserunt iure voluptates earum voluptas eos blanditiis ullam praesentium deleniti. Sint officiis consequuntur explicabo fuga reprehenderit ratione commodi sequi nobis recusandae? Tenetur quae maxime ea dolorum obcaecati natus similique et rem dolor tempore atque itaque quasi totam, dolore beatae ducimus quaerat dicta eum, adipisci earum facere enim hic magni ad. Expedita repudiandae nisi placeat officiis iste labore debitis molestias. Praesentium voluptatum, voluptatem perferendis ratione expedita numquam odit, doloremque accusantium est quas vero accusamus vitae libero hic, sunt quae laborum. Nulla itaque magnam cupiditate porro distinctio assumenda ut totam impedit, illum facilis earum ad molestiae nobis, sit, iste a magni officiis! Aliquam fuga, corporis architecto obcaecati rem corrupti nam minus amet. Ad aut dolores molestiae corporis sit in culpa accusamus pariatur perferendis iure itaque soluta accusantium officiis, ducimus animi incidunt ipsa quibusdam magnam officia laboriosam nam commodi hic? Eum officiis quos fuga, voluptatibus, quae natus unde obcaecati dolorum laborum magni reiciendis odio amet iure est eius ad eos quo impedit a adipisci omnis nostrum dignissimos illum? Numquam, est repellendus temporibus facilis dolores ipsam?</p>
+
+
+    <div class="img-con"><img id = "img-id"src="../../shade_resurses/emoji-icon.png" alt="emoji"></div>
+</body>
+</html>

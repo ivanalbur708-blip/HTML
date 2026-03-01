@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practic 3</title>
+    <style>
+        .la{
+         margin:150px;
+         padding:10px;
+         width: 30%;
+         height: 20px;
+         border: solid darkorange 5px; 
+        }
+        .squae{
+            width: 50px;
+            height: 40px;
+            margin: -10px;
+            background-color: orange;
+            animation: pyps;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate ;
+            transition: all 0.9s ease 0s;
+        }
+        @keyframes pyps{
+            from{
+                transform: translate(0,0);
+            }
+            to{
+                transform: translate(550px,0);
+            }
+        }
+        .img-con{
+            width: 300px;
+            height: 300px;
+            margin: 50px auto;
+            background-image: url(/shade_resurses/Pyste\ serdce.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .img-con:hover{
+            background-image: url(/shade_resurses/Polnoe\ serdce.png);
+            transform: scale(2);
+        }
+    </style>
+</head>
+<body>
+    <div class="la">
+        <div class="squae"></div>
+    </div>
+
+    <div class="img-con"></div>
+</body>
+</html>
