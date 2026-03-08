@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hover-al{
+            position: relative;
+            width: 200px;
+            height: 50px;
+            margin: 0 auto;
+            background-color: cadetblue;
+            text-align: center;
+            padding-top: 25px;
+        }
+        .hiden-al{
+            display: none;
+            position: absolute;
+            width: 200px;
+            height: 50px;
+            background-color: yellow;
+            margin: auto ;
+            top: 75px;
+            padding-top: 25px;
+        }
+        .hover-al:hover .hiden-al{
+            display: block;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="hover-al">Наведи на мене!
+        <div class="hiden-al">Я прихованій єлемент</div>
+    </div>
+</body>
+</html>
