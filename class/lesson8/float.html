@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .float-exp{
+            width: 100px;
+            height: 100px;
+            border: 3px solid black;
+            background-color: cadetblue;
+            margin-right: 5px;
+           
+            float: left;
+        }
+        img{
+            width: 90px;
+            height: 90px;
+            border-radius: 15px;
+            margin: auto;
+        }
+        .float-clear{
+            /* clear: left; */
+            overflow: auto;
+        }
+        .art{
+          border: 2px solid black;
+          margin: 5px;
+          padding: 5px; 
+        }
+        .clearfix::before{
+            content: "";
+            clear:both;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="art">
+    <div class="float-exp">
+        <img src="../../shade_resurses/emoji-icon.png" alt="emoji">
+    </div>
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, dolor perspiciatis alias commodi, illo sapiente
+        eveniet optio animi inventore, iste libero esse qui omnis aliquid similique sequi cupiditate distinctio dicta
+        magnam reiciendis officiis eaque accusantium dignissimos! Eum dignissimos ex ipsam aliquid tenetur quo mollitia
+        tempore illum amet reprehenderit ut atque non ullam obcaecati cupiditate aperiam possimus, repellat porro.
+        Cupiditate sint, architecto a earum corporis pariatur, nesciunt voluptate tempore accusantium quae, iusto
+        quaerat quas. Sapiente, impedit id. Corrupti blanditiis maxime ad quas. Magnam tempore, provident atque
+        voluptatum, soluta veniam eum sed quaerat, modi similique iste ducimus minus id eius error libero in! Amet unde
+        ex labore sit ad delectus inventore eos adipisci nesciunt nostrum doloremque modi molestias cupiditate ea
+        laudantium veniam omnis, blanditiis sunt, dolores eligendi eveniet! Tenetur enim repellat obcaecati eius
+        necessitatibus quasi, hic impedit, id eum, et suscipit soluta fugiat omnis error culpa nulla aut perferendis at
+        nisi neque?</p>
+    </div>
+    <div class="art">
+    <div class="float-clear">
+    <div class="float-exp float-clear">
+        <img src="../../shade_resurses/emoji-icon.png" alt="emoji">
+    </div>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, dolor perspiciatis alias commodi, illo sapiente
+        eveniet optio animi inventore, iste libero esse qui omnis aliquid similique sequi cupiditate distinctio dicta
+        magnam reiciendis officiis eaque accusantium dignissimos! Eum dignissimos ex ipsam aliquid tenetur quo mollitia
+        tempore illum amet reprehenderit ut atque non ullam obcaecati cupiditate aperiam possimus, repellat porro.
+        Cupiditate sint, architecto a earum corporis pariatur, nesciunt voluptate tempore accusantium quae, iusto
+        quaerat quas. Sapiente, impedit id. Corrupti blanditiis maxime ad quas. Magnam tempore, provident atque
+        voluptatum, soluta veniam eum sed quaerat, modi similique iste ducimus minus id eius error libero in! Amet unde
+        ex labore sit ad delectus inventore eos adipisci nesciunt nostrum doloremque modi molestias cupiditate ea
+        laudantium veniam omnis, blanditiis sunt, dolores eligendi eveniet! Tenetur enim repellat obcaecati eius
+        necessitatibus quasi, hic impedit, id eum, et suscipit soluta fugiat omnis error culpa nulla aut perferendis at
+        nisi neque?</p>
+    </div>
+</body>
+
+</html>
