@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lessom 10</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        img {
+            width: 150px;
+            box-shadow: 2px 2px 15px black;
+        }
+
+        .con {
+            background-color: coral;
+            border: 1px solid cadetblue;
+            border-radius: 15px;
+            margin: 2em;
+            padding: 1.5em;
+
+            flex-direction: row;
+            display: flex;
+            gap: 1.5em;
+            flex-wrap: wrap;
+
+            justify-content: flex-start;
+            align-items: center; 
+        }
+        .flex-elem{
+            /* width: 150px; */
+            height: 150px;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            border-radius: 10px;
+        }
+        .elem1{
+            flex-grow: 1;
+            background-color: green;
+        }
+        .elem2{
+            flex-grow: 2;
+            background-color: blue;
+        }
+        .elem3{
+            flex-grow: 2;
+            background-color: yellow;
+        }
+        .elem4{
+            flex-grow: 1;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="con">
+        <div class="flex-elem elem1">1</div>
+        <div class="flex-elem elem2">2</div>
+        <div class="flex-elem elem3">3</div>
+        <div class="flex-elem elem4">4</div>
+        <!-- <img src="../../shade_resurses/emoji-icon.png" alt="emoji">
+        <img src="../../shade_resurses/emoji-icon.png" alt="emoji">
+        <img src="../../shade_resurses/emoji-icon.png" alt="emoji"> -->
+    </div>
+</body>
+
+</html>

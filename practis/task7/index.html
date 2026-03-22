@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            padding: 40px;
+        }
+
+        .pricing-table {
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 900px;
+            background-color: white;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        /* Заголовки колонок */
+        th {
+            padding: 30px 10px;
+            color: white;
+            font-weight: normal;
+        }
+
+        .header-label {
+            display: block;
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .price {
+            display: block;
+            font-size: 2.2rem;
+            font-weight: bold;
+        }
+
+        .per-month {
+            font-size: 0.9rem;
+            display: block;
+            opacity: 0.8;
+        }
+
+        /* Цвета заголовков по тарифам */
+        .col-label { background-color: #7a8db5; font-size: 1.3rem; }
+        .col-starter { background-color: #7a8db5; }
+        .col-econom { background-color: #2e4676; }
+        .col-standard { background-color: #1b2a4e; }
+        .col-professional { background-color: #0d1526; }
+
+        /* Ячейки таблицы */
+        td {
+            padding: 15px;
+            border-bottom: 1px solid #eee;
+            color: #444;
+            font-size: 0.95rem;
+        }
+
+        /* Первая колонка с названиями параметров */
+        tr td:first-child {
+            text-align: left;
+            padding-left: 30px;
+            font-weight: 500;
+            background-color: #fcfcfc;
+        }
+
+        /* Чередование строк для читаемости */
+        tr:nth-child(even) td {
+            background-color: #f9f9f9;
+        }
+
+        /* Кнопки */
+        .btn-start {
+            background-color: #cccccc;
+            border: none;
+            padding: 10px 25px;
+            cursor: pointer;
+            font-weight: bold;
+            color: #555;
+            transition: background 0.3s;
+        }
+
+        .btn-start:hover {
+            background-color: #bbbbbb;
+        }
+
+        .footer-row td {
+            padding: 25px 10px;
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+
+<table class="pricing-table">
+    <thead>
+        <tr>
+            <th class="col-label">Choose your plan</th>
+            <th class="col-starter">
+                <span class="header-label">starter</span>
+                <span class="price">$10</span>
+                <span class="per-month">per month</span>
+            </th>
+            <th class="col-econom">
+                <span class="header-label">econom</span>
+                <span class="price">$30</span>
+                <span class="per-month">per month</span>
+            </th>
+            <th class="col-standard">
+                <span class="header-label">standard</span>
+                <span class="price">$59</span>
+                <span class="per-month">per month</span>
+            </th>
+            <th class="col-professional">
+                <span class="header-label">professional</span>
+                <span class="price">$99</span>
+                <span class="per-month">per month</span>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Amount of space</td>
+            <td>20GB</td>
+            <td>40GB</td>
+            <td>110GB</td>
+            <td>Unlimited</td>
+        </tr>
+        <tr>
+            <td>Bandwidth per month</td>
+            <td>120GB</td>
+            <td>240GB</td>
+            <td>610GB</td>
+            <td>1300GB</td>
+        </tr>
+        <tr>
+            <td>Email accounts</td>
+            <td>1</td>
+            <td>15</td>
+            <td>60</td>
+            <td>Unlimited</td>
+        </tr>
+        <tr>
+            <td>MySQL databases</td>
+            <td>1</td>
+            <td>15</td>
+            <td>60</td>
+            <td>Unlimited</td>
+        </tr>
+        <tr>
+            <td>25h support</td>
+            <td>No</td>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <td>Support tickets per month</td>
+            <td>2</td>
+            <td>6</td>
+            <td>14</td>
+            <td>20</td>
+        </tr>
+        <tr class="footer-row">
+            <td></td>
+            <td><button class="btn-start">START</button></td>
+            <td><button class="btn-start">START</button></td>
+            <td><button class="btn-start">START</button></td>
+            <td><button class="btn-start">START</button></td>
+        </tr>
+    </tbody>
+</table>
+</body>
+</html>

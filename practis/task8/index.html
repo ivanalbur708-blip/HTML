@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практичне завдання 1</title>
+    <style>
+     
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            padding: 40px 10px;
+        }
+
+       
+        .page-wrapper {
+            min-width: 600px;
+            max-width: 1200px;
+            width: 100%;
+            background-color: #333;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            display: flex;
+        }
+
+        .sidebar {
+            width: 100px;
+            background-color: #555;
+        }
+
+        .tab {
+            padding: 15px 10px;
+            border-bottom: 1px solid #666;
+            color: #ccc;
+            font-size: 13px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .tab:hover {
+            background-color: #666;
+            color: darkgray;
+        }
+
+        .main-content {
+            width: 100%;
+            padding: 25px;
+        }
+
+        
+        .cards-grid {
+            display: block; 
+        }
+
+      
+        .card {
+            width: 300px;
+            max-width: 350px;
+            margin-bottom: 20px;
+        }
+
+        .card-image {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 12px;
+        }
+
+        .card h3 {
+            color: #fff;
+            margin-bottom: 8px;
+            font-size: 18px;
+        }
+
+        .card p {
+            color: #bbb;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="page-wrapper">
+        <aside class="sidebar">
+            <div class="tab">Tab 1</div>
+            <div class="tab">Tab 2</div>
+            <div class="tab">Tab 3</div>
+        </aside>
+
+        <main class="main-content">
+            <div class="cards-grid">
+                
+                <div class="card">
+                    <img src="../../shade_resurses/350x220.png" alt="Фото 1" class="card-image">
+                    <h3>Header 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+
+                <div class="card">
+                    <img src="../../shade_resurses/350x220.png" alt="Фото 2" class="card-image">
+                    <h3>Header 2</h3>
+                    <p>Quisque id lectus et ipsum bibendum mattis vitae sagittis magna.</p>
+                </div>
+
+                <div class="card">
+                    <img src="../../shade_resurses/350x220.png" alt="Фото 3" class="card-image">
+                    <h3>Header 3</h3>
+                    <p>Mauris nec purus nec ligula euismod convallis. Vivamus ac tortor vel quam viverra tristique.</p>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 6</title>
+    <style>
+      
+body {
+    background-color: #d1d1d1; 
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.page-container {
+    min-width: 600px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #e2e2e2; 
+    min-height: 100vh;
+}
+
+
+.header {
+    background-color: #444;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-right: 50px;
+}
+
+.nav a {
+    color: #ccc;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 0.9em;
+}
+
+.nav a:hover {
+    color: white;
+}
+
+
+.main-layout {
+    display: flex;
+    padding: 30px;
+    gap: 30px;
+}
+
+.main-content {
+    flex: 2; 
+    background: white;
+    padding: 25px;
+}
+
+.sidebar {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+h1 { margin: 0 0 10px 0; color: #333; }
+time { color: #888; font-size: 0.8em; }
+
+.article-image {
+    background-color: #ffcc00;
+    text-align: center;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.article-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.events-list, .quote-block {
+    background: white;
+    padding: 20px;
+}
+
+.event-items {
+    list-style: none;
+    padding: 0;
+}
+
+.event-items li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    font-size: 0.85em;
+}
+
+.dot {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    font-size: 0.7em;
+}
+
+.blue { background-color: #3498db; }
+.red { background-color: #e74c3c; }
+.green { background-color: #1abc9c; }
+
+.quote-block {
+    font-size: 0.9em;
+    color: #555;
+    border-top: 2px solid #eee;
+}
+    </style>
+</head>
+<body>
+
+    <div class="page-container">
+        
+        <header class="header">
+            <div class="logo">Lorem Site</div>
+            <nav class="nav">
+                <a href="#">News</a>
+                <a href="#">Events</a>
+                <a href="#">Courses</a>
+                <a href="#">Jobs</a>
+                <a href="#">Tests</a>
+            </nav>
+        </header>
+
+        <div class="main-layout">
+            
+            <main class="main-content">
+                <article>
+                    <h1>What is Lorem Ipsum?</h1>
+                    <time datetime="2018-03-30">30/03/2018 11:20</time>
+                    
+                    <div class="article-image">
+                        <img src="../../shade_resurses/Html.png" alt="HTML Illustration">
+                    </div>
+                    
+                    <div class="article-text">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.</p>
+                    </div>
+                </article>
+            </main>
+
+            <aside class="sidebar">
+                <section class="events-list">
+                    <h3>Events</h3>
+                    <ul class="event-items">
+                        <li><span class="dot blue">7</span> Donec ut nisi ullamcorper...</li>
+                        <li><span class="dot red">19</span> Vivamus fringilla ligula...</li>
+                        <li><span class="dot green">27</span> Quisque vel quam...</li>
+                        <li><span class="dot blue">7</span> Curabitur eleifend...</li>
+                    </ul>
+                </section>
+
+                <section class="quote-block">
+                    <p><em>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</em></p>
+                </section>
+            </aside>
+            
+        </div>
+    </div>
+
+</body>
+</html>
