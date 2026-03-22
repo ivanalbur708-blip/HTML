@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.con{
+    border: 1px solid gray;
+    width: 100vw;
+    min-width: 320px;
+    max-width: 1600px;
+
+    margin: auto;
+
+}
+.mops{
+    background-image: url();
+    
+}
+.do{
+    text-align: center;
+    color: black;
+    background-color:blue;
+}
+
+@media screen and (max-width:600px){
+
+    .con{
+        flex-direction:column ;
+        flex-basis: auto;
+    }
+
+}
+
+
