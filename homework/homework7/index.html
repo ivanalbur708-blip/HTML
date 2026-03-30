@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Subscription Plans</title>
+    <style>
+        body {
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            gap: 20px;
+        }
+
+
+        .card {
+            background: white;
+            width: 220px;
+            padding-bottom: 30px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            border-top: 5px solid transparent;
+
+
+            transition: transform 1s ease, z-index 1s;
+            position: relative;
+            z-index: 1;
+        }
+
+
+        .card:hover {
+            transform: scale(1.15);
+            z-index: 10;
+        }
+
+
+        .enterprise {
+            border-top-color: #d8436b;
+        }
+
+        .professional {
+            border-top-color: #e6a23c;
+        }
+
+        .standard {
+            border-top-color: #409eff;
+        }
+
+        .basic {
+            border-top-color: #67c23a;
+        }
+
+
+        .header {
+            padding: 20px;
+            font-weight: bold;
+            font-size: 14px;
+            color: #555;
+            border-bottom: 1px solid #eee;
+        }
+
+        .price {
+            font-size: 48px;
+            font-weight: bold;
+            padding: 20px 0;
+            color: #333;
+        }
+
+        .price span {
+            font-size: 24px;
+            vertical-align: top;
+        }
+
+        .price p {
+            font-size: 12px;
+            color: #aaa;
+            margin: 0;
+            font-weight: normal;
+        }
+
+        .features {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+            font-size: 13px;
+            line-height: 2;
+            color: #666;
+        }
+
+        .features li {
+            border-bottom: 1px solid #f9f9f9;
+            padding: 5px 0;
+        }
+
+
+        .btn {
+            border: none;
+            padding: 10px 30px;
+            color: white;
+            border-radius: 4px;
+            font-size: 12px;
+        }
+
+        .enterprise .btn {
+            background: #d8436b;
+        }
+
+        .professional .btn {
+            background: #e6a23c;
+        }
+
+        .standard .btn {
+            background: #409eff;
+        }
+
+        .basic .btn {
+            background: #67c23a;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="card enterprise">
+            <div class="header">ENTERPRISE</div>
+            <div class="price">
+                <span class="currency">$</span>69
+                <p>per month</p>
+            </div>
+            <ul class="features">
+                <li>10GB disk space</li>
+                <li>100GB monthly bandwidth</li>
+                <li>20 email accounts</li>
+                <li>Unlimited subdomains</li>
+            </ul>
+            <button class="btn">BUY</button>
+        </div>
+
+        <div class="card professional">
+            <div class="header">PROFESSIONAL</div>
+            <div class="price">
+                <span class="currency">$</span>29
+                <p>per month</p>
+            </div>
+            <ul class="features">
+                <li>5GB disk space</li>
+                <li>60GB monthly bandwidth</li>
+                <li>10 email accounts</li>
+                <li>Unlimited subdomains</li>
+            </ul>
+            <button class="btn">BUY</button>
+        </div>
+
+        <div class="card standard">
+            <div class="header">STANDARD</div>
+            <div class="price">
+                <span class="currency">$</span>19
+                <p>per month</p>
+            </div>
+            <ul class="features">
+                <li>3GB disk space</li>
+                <li>30GB monthly bandwidth</li>
+                <li>5 email accounts</li>
+                <li>Unlimited subdomains</li>
+            </ul>
+            <button class="btn">BUY</button>
+        </div>
+
+        <div class="card basic">
+            <div class="header">BASIC</div>
+            <div class="price">
+                <span class="currency">$</span>9
+                <p>per month</p>
+            </div>
+            <ul class="features">
+                <li>1GB disk space</li>
+                <li>10GB monthly bandwidth</li>
+                <li>2 email accounts</li>
+                <li>Unlimited subdomains</li>
+            </ul>
+            <button class="btn">BUY</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
