@@ -1,0 +1,62 @@
+// Основные настройки
+$bg-dark: #333;
+$text-light: #fff;
+$hover-darken: #ccc; 
+.navigation {
+  background-color: $bg-dark;
+  
+  .menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    justify-content: center;
+
+    li {
+      position: relative; 
+
+      a {
+        display: block;
+        padding: 15px 25px;
+        color: $text-light;
+        text-decoration: none;
+        transition: color 0.3s;
+
+        
+        &:hover {
+          color: $hover-darken;
+        }
+      }
+
+      .submenu {
+        display: none; 
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: $bg-dark;
+        list-style: none;
+        padding: 0;
+        min-width: 150px;
+
+        li {
+          a {
+            padding: 10px 20px;
+            font-size: 14px;
+          }
+        }
+      }
+
+      
+      &:hover {
+        .submenu {
+          display: block;
+        }
+        
+        > a {
+          background-color: #fff;
+          color: $bg-dark;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,197 @@
+!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AD'S BOARD</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .search-section {
+            background-color: #f0f2f5;
+            padding: 40px 0;
+        }
+
+        .category-link {
+            text-decoration: none;
+            color: #333;
+            transition: 0.2s;
+            font-size: 0.95rem;
+        }
+
+        .category-link:hover {
+            color: #0d6efd;
+        }
+
+        .category-icon {
+            font-size: 22px;
+            width: 35px;
+            text-align: center;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: #6c757d;
+            font-size: 0.85rem;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+  
+    <nav class="navbar navbar-light bg-white border-bottom py-2">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="https://cdn-icons-png.flaticon.com/512/1997/1997970.png" alt="Logo" width="40" class="me-2">
+                <span class="fw-bold text-uppercase">AD'S BOARD</span>
+            </a>
+            <div class="d-flex align-items-center">
+                <button class="btn btn-warning fw-bold me-3">+ New ad</button>
+                <div class="d-flex align-items-center">
+                    <img src="..//../shade_resurses/account.png" class="rounded-circle me-2" alt="User">
+                    <a href="#" class="text-decoration-none text-primary">My profile</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="search-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="input-group">
+
+                        <span class="input-group-text bg-white border-end-0"><i
+                                class="fas fa-search text-muted"></i></span>
+                        <input type="text" class="form-control border-start-0 py-2"
+                            placeholder="11 999 345 ads near you">
+
+                        <span class="input-group-text bg-white border-end-0 border-start-0 ms-1"><i
+                                class="fas fa-map-marker-alt text-muted"></i></span>
+                        <input type="text" class="form-control border-start-0 py-2" placeholder="Kiev, Kiev area">
+
+                        <button class="btn btn-primary px-5 ms-1 fw-bold" type="button">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <main class="container my-5">
+        <div class="row g-4">
+
+            <div class="col-6 col-md-3">
+                <a href="#" class="category-link d-flex align-items-center">
+                    <i class="fas fa-baby category-icon text-dark me-2"></i> Children's world
+                </a>
+            </div>
+            <div class="col-6 col-md-3">
+                <a href="#" class="category-link d-flex align-items-center">
+                    <i class="fas fa-home category-icon text-info me-2"></i> Property
+                </a>
+            </div>
+            <div class="col-6 col-md-3">
+                <a href="#" class="category-link d-flex align-items-center">
+                    <i class="fas fa-car category-icon text-warning me-2"></i> Transport
+                </a>
+            </div>
+            <div class="col-6 col-md-3">
+                <a href="#" class="category-link d-flex align-items-center">
+                    <i class="fas fa-tools category-icon text-danger me-2"></i> Spare parts for cars
+                </a>
+            </div>
+            <div class="col-6 col-md-3">
+                <a href="#" class="category-link d-flex align-items-center">
+                    <i class="fas fa-briefcase category-icon text-success me-2"></i> Jobs
+                </a>
+            </div>
+            <div class="col-6 col-md-3">
+                <a href="#" class="category-link d-flex align-items-center">
+                    <i class="fas fa-paw category-icon text-secondary me-2"></i> Animals
+                </a>
+            </div>
+            <div class="col-6 col-md-3">
+                <a href="#" class="category-link d-flex align-items-center">
+                    <i class="fas fa-couch category-icon text-primary me-2"></i> House & garden
+                </a>
+            </div>
+            <div class="col-6 col-md-3">
+                <a href="#" class="category-link d-flex align-items-center">
+                    <i class="fas fa-mobile-alt category-icon text-success me-2"></i> Phones, Tablets & PCs
+                </a>
+            </div>
+            <div class="col-6 col-md-3">
+                <a href="#" class="category-link d-flex align-items-center">
+                    <i class="fas fa-hammer category-icon text-info me-2"></i> Business & services
+                </a>
+            </div>
+            <div class="col-6 col-md-3">
+                <a href="#" class="category-link d-flex align-items-center">
+                    <i class="fas fa-tshirt category-icon text-danger me-2"></i> Fashion & style
+                </a>
+            </div>
+            <div class="col-6 col-md-3">
+                <a href="#" class="category-link d-flex align-items-center">
+                    <i class="fas fa-bicycle category-icon text-warning me-2"></i> Hobbies & sports
+                </a>
+            </div>
+            <div class="col-6 col-md-3">
+                <a href="#" class="category-link d-flex align-items-center">
+                    <i class="fas fa-gift category-icon text-primary me-2"></i> Gifts
+                </a>
+            </div>
+            <div class="col-6 col-md-3">
+                <a href="#" class="category-link d-flex align-items-center">
+                    <i class="fas fa-sync-alt category-icon text-warning me-2"></i> Exchange
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Футер -->
+    <footer class="bg-light py-5 mt-5 border-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mb-4 mb-md-0 text-center text-md-start">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1997/1997970.png" alt="Logo" width="60"
+                        class="opacity-25">
+                </div>
+                <div class="col-6 col-md-3">
+                    <ul class="list-unstyled">
+                        <li><a href="#">Mobile applications</a></li>
+                        <li><a href="#">Paid services</a></li>
+                        <li><a href="#">Advertising on the website</a></li>
+                        <li><a href="#">For the press</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-3">
+                    <ul class="list-unstyled">
+                        <li><a href="#">AD'S BOARD blog</a></li>
+                        <li><a href="#">Safety regulations</a></li>
+                        <li><a href="#">How to sell and buy?</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-3">
+                    <ul class="list-unstyled">
+                        <li><a href="#">Work at AD'S BOARD</a></li>
+                        <li><a href="#">Map of Regions</a></li>
+                        <li><a href="#">Site Map</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

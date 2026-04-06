@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 10.1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .page-container {
+            background-color: #ffffff;
+            padding: 40px;
+            max-width: 1100px;
+            width: 100%;
+            box-sizing: border-box;
+            box-shadow: 0 0 10px rgba(0,0,0,0.05);
+        }
+
+        .main-layout {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .article-content {
+            display: flex;
+            flex-direction: column;
+        }
+
+        h1 {
+            margin: 0 0 15px 0;
+            font-size: 1.4rem;
+            color: #000;
+        }
+
+        p {
+            font-size: 0.85rem;
+            line-height: 1.5;
+            color: #333;
+            margin: 0 0 15px 0;
+            text-align: justify;
+        }
+
+        .images-sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .img-card {
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .img-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .caption {
+            background-color: #3e5871;
+            color: white;
+            padding: 10px;
+            font-size: 0.75rem;
+            text-align: center;
+            line-height: 1.3;
+        }
+
+        @media (min-width: 801px) {
+            .main-layout {
+                flex-direction: row;
+                align-items: flex-start;
+            }
+            .article-content {
+                flex: 2;
+            }
+            .images-sidebar {
+                flex: 1;
+                min-width: 300px;
+            }
+        }
+
+        @media (min-width: 601px) and (max-width: 800px) {
+            .images-sidebar {
+                flex-direction: row;
+                gap: 15px;
+            }
+            .img-card {
+                flex: 1;
+            }
+            .article-text-top { order: 1; }
+            .images-sidebar { order: 2; margin: 10px 0; }
+            .article-text-bottom { order: 3; }
+        }
+
+        @media (max-width: 600px) {
+            .article-text-top { order: 1; }
+            .images-sidebar { order: 2; }
+            .article-text-bottom { order: 3; }
+            .img-card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="page-container">
+        <main class="main-layout">
+            
+            <article class="article-content">
+                <div class="article-text-top">
+                    <h1>Cat</h1>
+                    <p>
+                        The cat (Felis catus) is a small carnivorous mammal. It is the only domesticated species in the family Felidae 
+                        and often referred to as the domestic cat to distinguish it from wild members of the family. The cat is either 
+                        a house cat, kept as a pet, or a feral cat, freely ranging and avoiding human contact. A house cat is valued 
+                        by humans for companionship and for its ability to hunt rodents. About 60 cat breeds are recognized by various cat registries.
+                    </p>
+                </div>
+
+                <div class="article-text-bottom">
+                    <p>
+                        Cats are similar in anatomy to the other felid species, with a strong flexible body, quick reflexes, sharp teeth 
+                        and retractable claws adapted to killing small prey. They are predators who are most active at dawn and dusk 
+                        (crepuscular). Cats can hear sounds too faint or too high in frequency for human ears, such as those made by 
+                        mice and other small animals. Compared to humans, they see better in the dark (they see in near total darkness) 
+                        and have a better sense of smell, but poorer color vision.
+                    </p>
+                    <p>
+                        Cats, despite being solitary hunters, are a social species. Cat communication includes the use of vocalizations 
+                        including mewing, purring, trilling, hissing, growling and grunting as well as cat-specific body language. 
+                        Cats also communicate by secreting and perceiving pheromones.
+                    </p>
+                    <p>
+                        Female domestic cats can have kittens from spring to late autumn, with litter sizes ranging from two to five kittens. 
+                        Domestic cats can be bred and shown as registered pedigreed cats, a hobby known as cat fancy. Failure to control 
+                        the breeding of pet cats by spaying and neutering, as well as abandonment of pets, has resulted in large numbers 
+                        of feral cats worldwide, contributing to the extinction of entire bird species, and evoking population control.
+                    </p>
+                </div>
+            </article>
+
+            <div class="images-sidebar">
+                <div class="img-card">
+                    <img src="../../shade_resurses/cat1.jpg" alt="A Tabby cat">
+                    <div class="caption">A Tabby cat in snowy weather</div>
+                </div>
+                <div class="img-card">
+                    <img src="../../shade_resurses/cat2.jpg" alt="Cat tongue detail">
+                    <div class="caption">The hooked papillae on a cat's tongue act like a hairbrush to help clean and detangle fur.</div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+</body>
+</html>
