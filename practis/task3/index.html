@@ -1,57 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practic 3</title>
+    <title>Task 3</title>
     <style>
-        .la{
-         margin:150px;
-         padding:10px;
-         width: 30%;
-         height: 20px;
-         border: solid darkorange 5px; 
-        }
-        .squae{
-            width: 50px;
-            height: 40px;
-            margin: -10px;
-            background-color: orange;
-            animation: pyps;
-            animation-duration: 1s;
-            animation-timing-function: linear;
-            animation-iteration-count: infinite;
-            animation-direction: alternate ;
-            transition: all 0.9s ease 0s;
-        }
-        @keyframes pyps{
-            from{
-                transform: translate(0,0);
-            }
-            to{
-                transform: translate(550px,0);
-            }
-        }
-        .img-con{
+        .progress-container {
             width: 300px;
-            height: 300px;
+            height: 50px;
+            border: 3px solid orange;
+            position: relative;
+            overflow: hidden;
             margin: 50px auto;
-            background-image: url(/shade_resurses/Pyste\ serdce.png);
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
         }
-        .img-con:hover{
-            background-image: url(/shade_resurses/Polnoe\ serdce.png);
-            transform: scale(2);
+
+        .progress-fill {
+            width: 60px;
+            height: 100%;
+            background-color: orange;
+            position: absolute;
+
+            animation: move-progress 2s linear infinite;
+        }
+
+        @keyframes move-progress {
+            0% {
+                left: -60px;
+            }
+
+            100% {
+                left: 300px;
+            }
         }
     </style>
 </head>
-<body>
-    <div class="la">
-        <div class="squae"></div>
-    </div>
 
-    <div class="img-con"></div>
+<body>
+    <div class="progress-container">
+        <div class="progress-fill"></div>
+    </div>
 </body>
+
 </html>
