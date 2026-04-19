@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 9</title>
+    <style>
+        .main-container {
+            display: flex;
+            gap: 30px;
+            padding: 20px;
+        }
+
+        .content {
+            flex: 3;
+        }
+
+        .sidebar {
+            flex: 1;
+        }
+
+        @media (max-width: 800px) {
+            .main-container {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                display: flex;
+                justify-content: space-between;
+                gap: 20px;
+            }
+
+            .menu-section {
+                flex: 1;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .sidebar {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <article class="content">
+            <h2>Introduction</h2>
+            <p>Aenean dictum elit sapien, et tempor leo malesuada eget...</p>
+            <h2>Additional information</h2>
+            <p>Duis sed pharetra odio. Donec luctus posuere nibh...</p>
+        </article>
+
+        <aside class="sidebar">
+            <div class="menu-section">
+                <h3>Actions</h3>
+                <ul>
+                    <li>Integer ut magna cursus eros</li>
+                    <li>Fusce imperdiet sapien a sem</li>
+                </ul>
+            </div>
+            <div class="menu-section">
+                <h3>Plans</h3>
+                <ul>
+                    <li>Morbi at diam suscipit mauris</li>
+                    <li>Donec vel odio malesuada</li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+</body>
+
+</html>
