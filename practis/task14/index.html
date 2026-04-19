@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task14</title>
+    <style>
+        * {
+            background-image: url(../../shade_resurses/mops/prime-mops.png);
+        }
+        rt {
+            width: 50vw;
+            height: 35vh;
+            box-shadow: 3px black;
+        }
+        form{
+            border: 2px solid black;
+        }
+        textarea{
+            height: 300px;
+            width: 700px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: black;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="rt">
+        <form action="" method="post">
+            <label for="Username">Введіть ім'я</label>
+            <input type="text" id="Username"> <input type="text">
+            <br>
+            <label for="Email">Введіть пошту</label>
+            <input type="email" name="Emmail" id="Email">      
+            <br>
+            <label for="Phone">Введіть номер телфону</label>
+            <input type="text" name="Phone" id="Phone">
+            <br>
+            <label for="Text">Виберіть тему</label>
+            <select name="Text" id="Text">
+                <option value="Horror">Жахи</option>
+                <option value="Roman">Роман</option>
+                <option value="Action">Екшн</option>
+            </select>
+            <br>
+            <label for="texter"></label>
+            <textarea name="texter" id="texter"></textarea>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+
+</html>
