@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>Results Summary - Tailwind</title>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Hanken Grotesk', sans-serif; }
+  </style>
+</head>
+<body class="bg-[#ecf2ff] flex items-center justify-center min-h-screen">
+
+  <main class="flex flex-col md:flex-row bg-white w-full max-w-[700px] md:rounded-[32px] shadow-xl overflow-hidden">
+    
+    <section class="bg-gradient-to-b from-[#7857ff] to-[#2e2be9] text-white p-10 flex flex-col items-center text-center md:w-1/2 rounded-b-[32px] md:rounded-[32px]">
+      <h3 class="text-[#cac9ff] text-xl font-medium">Your Result</h3>
+      
+      <div class="my-8 w-44 h-44 rounded-full flex flex-col justify-center items-center bg-gradient-to-b from-[#4e21ca] to-transparent">
+        <span class="text-7xl font-extrabold">76</span>
+        <span class="text-[#cac9ff] opacity-70">of 100</span>
+      </div>
+      
+      <h2 class="text-3xl font-bold mb-3">Great</h2>
+      <p class="text-[#cac9ff] px-6">You scored higher than 65% of the people who have taken these tests.</p>
+    </section>
+
+    <section class="p-10 md:w-1/2 flex flex-col">
+      <h3 class="text-[#303b5a] text-xl font-bold mb-7">Summary</h3>
+      
+      <div class="space-y-4 mb-10">
+        <div class="flex justify-between p-4 rounded-xl bg-red-50">
+          <span class="text-[#ff5757] font-bold flex items-center gap-2">⚡ Reaction</span>
+          <p class="text-[#303b5a] font-bold">80 <span class="text-gray-400">/ 100</span></p>
+        </div>
+        
+        <div class="flex justify-between p-4 rounded-xl bg-yellow-50">
+          <span class="text-[#ffb800] font-bold flex items-center gap-2">🧠 Memory</span>
+          <p class="text-[#303b5a] font-bold">92 <span class="text-gray-400">/ 100</span></p>
+        </div>
+        
+        <div class="flex justify-between p-4 rounded-xl bg-green-50">
+          <span class="text-[#00bd91] font-bold flex items-center gap-2">💬 Verbal</span>
+          <p class="text-[#303b5a] font-bold">61 <span class="text-gray-400">/ 100</span></p>
+        </div>
+        
+        <div class="flex justify-between p-4 rounded-xl bg-blue-50">
+          <span class="text-[#1125d4] font-bold flex items-center gap-2">👁️ Visual</span>
+          <p class="text-[#303b5a] font-bold">73 <span class="text-gray-400">/ 100</span></p>
+        </div>
+      </div>
+
+      <button class="w-full bg-[#303b5a] hover:bg-gradient-to-b from-[#7857ff] to-[#2e2be9] text-white py-4 rounded-full font-bold transition-all duration-300">
+        Continue
+      </button>
+    </section>
+
+  </main>
+
+</body>
+</html>

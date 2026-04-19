@@ -1,26 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task 9</title>
-    <link rel="stylesheet" href="./style/style.css">
+<style>
+  .container {
+    display: grid;
+    gap: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    max-width: 800px;
+  }
+  .image-box { background: #ddd; height: 100px; }
+  .info-box { padding: 10px; }
+  .btn-box { display: flex; justify-content: flex-end; }
+
+  @media (min-width: 600px) {
+    .container { grid-template-columns: 150px 1fr auto; align-items: center; }
+  }
+  @media (max-width: 599px) {
+    .container { grid-template-columns: 1fr; }
+  }
+</style>
 </head>
-
 <body>
-    <div class="con">
-        <div class="mgt"><img src="../../shade_resurses/loading.png" alt="loading"></div>
-        <div class="text">UPLOADING 40%   About 23 minutes remaining </div>
-        <div class="do">Done</div>
-        <div class="te">
-            <h1>Title of video</h1>
-        </div>
-        <div class="yo">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, magnam?</p>
-        </div>
-    </div>
-   <div class="mops"><img src="../../shade_resurses/mops/prime-mops.png" alt="prime mops"></div>
-</body>
 
+<div class="container">
+  <div class="image-box"></div>
+  <div class="info-box">
+    <div>UPLOADING 40%</div>
+    <strong>Title of video</strong>
+  </div>
+  <div class="btn-box"><button>DONE</button></div>
+</div>
+
+</body>
 </html>

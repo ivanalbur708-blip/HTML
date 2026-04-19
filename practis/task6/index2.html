@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+    margin: 0;
+    padding-left: 80px;
+}
+
+.side-menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 80px;
+    background-color: #888;
+    color: white;
+    overflow: hidden;
+    transition: width 1s ease; 
+    z-index: 100;
+}
+
+.side-menu:hover {
+    width: 250px; 
+}
+
+.menu-header {
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.side-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.side-menu li {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+    white-space: nowrap;
+}
+
+
+.side-menu li:hover, .side-menu li.active {
+    background-color: #666;
+}
+
+.icon {
+    min-width: 40px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.text {
+    margin-left: 20px;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.side-menu:hover .text {
+    opacity: 1;
+}
+
+.content {
+    padding: 40px;
+    max-width: 800px;
+}
+    </style>
+</head>
+
+<body>
+    <nav class="side-menu">
+        <div class="menu-header">MENU</div>
+        <ul>
+            <li><span class="icon">✎</span> <span class="text">EDIT</span></li>
+            <li><span class="icon">♥</span> <span class="text">FAVORITES</span></li>
+            <li><span class="icon">🕒</span> <span class="text">HISTORY</span></li>
+            <li class="active"><span class="icon">🛡</span> <span class="text">SECURITY</span></li>
+            <li><span class="icon">⚙</span> <span class="text">SETTINGS</span></li>
+        </ul>
+    </nav>
+
+    <main class="content">
+        <h1>WHAT IS LOREM IPSUM?</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque eligendi suscipit quod cupiditate eos quos
+            repudiandae? Obcaecati officiis vel non aliquam. Quasi, excepturi itaque reiciendis delectus ipsa pariatur
+            officia iure laborum, cupiditate sint ea doloribus possimus. Ipsum in, saepe facilis magnam quae ad, odit
+            eius est quasi cum asperiores ex accusantium! Nemo eum harum ex dignissimos cum iste accusamus laboriosam
+            incidunt et facere quam fugit aliquid tempore, natus vero voluptatum fuga repudiandae unde temporibus eius
+            autem minus, ad libero nisi? Quos deserunt veritatis, perferendis repellendus possimus amet quam, asperiores
+            rem quasi itaque error vel magnam sapiente rerum dicta ea a ipsum! Atque pariatur voluptatem labore,
+            excepturi provident nemo obcaecati itaque ratione. Itaque perferendis nobis tempore quia libero consequatur
+            nostrum iste! Ipsum, molestias fuga accusamus sequi corrupti delectus, est ut voluptate ratione molestiae
+            numquam obcaecati incidunt in voluptatum ipsam iste eveniet, dolores minima error velit ab! Officiis, nemo
+            eum temporibus facilis architecto cupiditate quos aperiam earum libero hic, doloremque ab, laboriosam facere
+            est aut. Dolore quisquam blanditiis odio consectetur adipisci repudiandae, odit repellat necessitatibus
+            dolorem, totam perferendis modi earum, nisi dignissimos! Rerum possimus delectus exercitationem ex enim
+            fugit vitae pariatur quisquam blanditiis ipsum! Enim nesciunt, aspernatur repellat nemo ut perspiciatis
+            officiis at, unde quam voluptates quo! Ea deserunt error architecto sint eos quidem dolore quae debitis ipsa
+            maiores! Omnis maiores facilis, quo alias assumenda accusantium quam earum, ipsum reprehenderit deserunt
+            magnam dignissimos, officiis optio enim corrupti deleniti ullam aliquam a corporis cum pariatur doloribus
+            modi consectetur dolorum! Nobis necessitatibus deserunt accusamus!</p>
+    </main>
+</body>
+
+</html>

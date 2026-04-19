@@ -1,39 +1,125 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zavdannya 2</title>
+    <title>Dropdown Menu</title>
     <style>
-        table,th{
-            border: 1px solid black;
-        }
-        thead{
-            background-color: chartreuse;
-        }
-        .hide{
-            display: none;
-            background-color: chartreuse;
-        }
-        .cate:hover .hide{
-            display: block;
-        }
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 50px;
+}
+
+.wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    padding: 40px;
+    min-height: 400px;
+}
+
+
+.menu {
+    list-style: none;
+    display: flex; 
+    background-color: #57a176;
+    margin-bottom: 30px;
+}
+
+.menu li {
+    position: relative; 
+    flex: 1;
+    text-align: center;
+}
+
+.menu a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+
+.menu li:hover > a {
+    background-color: #3e7454;
+}
+
+.submenu, .submenu-inner {
+    display: none;
+    position: absolute;
+    list-style: none;
+    background-color: #57a176;
+    width: 100%;
+    min-width: 150px;
+    z-index: 10;
+}
+
+
+.submenu {
+    top: 100%;
+    left: 0;
+}
+
+.submenu-inner {
+    top: 0;
+    left: 100%;
+}
+
+.menu li:hover > .submenu {
+    display: block;
+}
+
+.submenu li:hover > .submenu-inner {
+    display: block;
+}
+
+
+.submenu a {
+    text-align: left;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.content {
+    color: #555;
+    line-height: 1.6;
+}
     </style>
 </head>
 <body>
-    <table>
-        <thead>
-            <tr>
-                <th>Home</th>
-                <th class="cate">Categories</th>
-                <th class="hide">Man</th>
-                <th>About</th>
-                <th>Contacts</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr><td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, est impedit tenetur molestiae, voluptatibus fugiat porro ipsam eius aperiam sunt dolorem nihil eum fugit molestias nobis, repellat quibusdam quae id sint vero temporibus architecto odit. Quisquam magnam recusandae aut incidunt rerum dicta, reprehenderit aspernatur accusantium natus, distinctio perspiciatis corporis exercitationem. Perferendis provident nemo rerum in possimus deserunt officiis? Provident maiores laborum cum quo suscipit quasi adipisci ab itaque saepe consequatur perferendis amet voluptatem quis, iste nulla, in, praesentium odio fugiat recusandae! Ut atque nam nemo ea officia beatae voluptate vitae earum, quis quia voluptatum nihil odit unde. Voluptates, laudantium. Fugiat!</td></tr>
-        </tbody>
-    </table>
+    <div class="wrapper">
+        <nav class="main-nav">
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li class="has-children">
+                    <a href="#">Categories</a>
+                    <ul class="submenu">
+                        <li><a href="#">Man</a></li>
+                        <li class="has-children">
+                            <a href="#">Women</a>
+                            <ul class="submenu-inner">
+                                <li><a href="#">Dress</a></li>
+                                <li><a href="#">Pants</a></li>
+                                <li><a href="#">Shoes</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Kids</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac augue quis ante blandit blandit et massa. Integer libero dui, pellentesque id laoreet eu, dignissim non ex. Donec a purus non augue rutrum semper et quis justo. Etiam ultrices ante at elit porttitor malesuada.</p>
+        </div>
+    </div>
 </body>
 </html>
