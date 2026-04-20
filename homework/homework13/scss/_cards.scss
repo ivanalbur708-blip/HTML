@@ -1,0 +1,38 @@
+.product-card {
+  padding: $spacer;
+  border: 1px solid lighten($secondary, 40%);
+  border-radius: 10px;
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+
+  img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: $spacer;
+  }
+
+  .title {
+    font-size: 1.25rem;
+    color: #333;
+    margin-bottom: ($spacer / 2);
+  }
+
+  .price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: $primary;
+    margin-bottom: $spacer;
+  }
+
+  .card-actions {
+    @include flex-center; 
+    gap: 10px;
+  }
+
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+}

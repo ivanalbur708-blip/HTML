@@ -1,0 +1,31 @@
+@use "sass:color";
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: $font-main;
+  transition: opacity 0.3s ease;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.btn-buy {
+  @extend .btn;
+  background-color: $success;
+  color: white;
+}
+
+.btn-cancel {
+  @extend .btn;
+  background-color: $danger;
+  color: white;
+}
+
+.btn-info {
+  @extend .btn;
+  background-color: $primary;
+  color: white;
+}

@@ -22,7 +22,7 @@ body {
     padding: 20px;
 }
 .foot{
-    background-color: darken($color, 15%);
+    background-color: color.adjust($color, $lightness: -15%);
     color: $color-text;
     padding: 20px;
     text-align: center;

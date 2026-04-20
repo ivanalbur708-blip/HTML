@@ -1,0 +1,11 @@
+@use '_variables';
+@use'_mixins';
+@use'_buttons';
+@use '_cards';
+
+body {
+  font-family: sans-serif;
+  padding: $spacer * 2;
+  background-color: #f8f9fa;
+  @include flex-center;
+}
